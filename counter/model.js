@@ -1,6 +1,6 @@
 // model, данные приложения
 
-const model = {
+export default {
   counter: 0,
   increase: function () {
     ++this.counter

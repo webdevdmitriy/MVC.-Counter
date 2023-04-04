@@ -2,18 +2,18 @@ const btnPlus = document.getElementById('btnPlus')
 const btnMinus = document.getElementById('btnMinus')
 const btnReset = document.getElementById('btnReset')
 
-updateCounter(counter)
+view.updateCounter(model.counter)
 
 btnPlus.addEventListener('click', function () {
-  increase()
-  updateCounter(counter)
+  model.increase()
+  view.updateCounter(model.counter)
 })
 
 btnMinus.addEventListener('click', function () {
-  decrease()
-  updateCounter(counter)
+  model.decrease()
+  view.updateCounter(model.counter)
 })
 btnReset.addEventListener('click', function () {
-  reset()
-  updateCounter(counter)
+  model.reset()
+  view.updateCounter(model.counter)
 })

@@ -1,12 +1,14 @@
-let counter = 0 // model, данные приложенич
+// model, данные приложения
 
-function increase() {
-  counter += 1
-}
-function decrease() {
-  counter -= 1
-}
-
-function reset() {
-  counter = 0
+const model = {
+  counter: 0,
+  increase: function () {
+    ++this.counter
+  },
+  decrease: function () {
+    --this.counter
+  },
+  reset: function () {
+    this.counter = 0
+  },
 }

@@ -1,5 +1,6 @@
-const input = document.getElementById('input')
-
-function updateCounter(counter) {
-  input.value = counter
+const view = {
+  input: document.getElementById('input'),
+  updateCounter: function (counter) {
+    this.input.value = counter
+  },
 }
